@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50221743}
   - component: {fileID: 50221744}
+  - component: {fileID: 50221745}
   m_Layer: 0
   m_Name: Territory_WidowsWatch
   m_TagString: Untagged
@@ -203,6 +204,18 @@ PolygonCollider2D:
       - {x: 0.47199202, y: 0.20517302}
       - {x: 0.58628654, y: 0.270046}
       - {x: 0.5714743, y: 0.44591564}
+--- !u!114 &50221745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50221742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89273726
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89273727}
   - component: {fileID: 89273728}
+  - component: {fileID: 89273729}
   m_Layer: 0
   m_Name: Territory_Sandstone
   m_TagString: Untagged
@@ -291,6 +305,18 @@ PolygonCollider2D:
       - {x: 0.75999165, y: -0.23522806}
       - {x: 0.6713251, y: -0.04761982}
       - {x: 0.58729714, y: -0.031424582}
+--- !u!114 &89273729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89273726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189207160
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189207161}
   - component: {fileID: 189207162}
+  - component: {fileID: 189207163}
   m_Layer: 0
   m_Name: Territory_KingsLanding
   m_TagString: Untagged
@@ -380,6 +407,18 @@ PolygonCollider2D:
       - {x: 0.6258627, y: 0.30296767}
       - {x: 0.42207527, y: 0.47640026}
       - {x: 0.39228308, y: 0.6712987}
+--- !u!114 &189207163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189207160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &227359643
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227359644}
   - component: {fileID: 227359645}
+  - component: {fileID: 227359646}
   m_Layer: 0
   m_Name: Territory_Winterfell
   m_TagString: Untagged
@@ -478,6 +518,18 @@ PolygonCollider2D:
       - {x: 0.7945566, y: 0.48395348}
       - {x: 0.8302627, y: 0.7382121}
       - {x: 0.88150764, y: 1.282702}
+--- !u!114 &227359646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227359643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &228108525
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,6 +570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288328056}
   - component: {fileID: 288328057}
+  - component: {fileID: 288328058}
   m_Layer: 0
   m_Name: Territory_Dragonstone
   m_TagString: Untagged
@@ -574,6 +627,18 @@ PolygonCollider2D:
       - {x: 0.45269716, y: -0.053751945}
       - {x: 0.5172901, y: 0.082799554}
       - {x: 0.43526554, y: 0.29059607}
+--- !u!114 &288328058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288328055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354801276
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 354801277}
   - component: {fileID: 354801278}
+  - component: {fileID: 354801279}
   m_Layer: 0
   m_Name: Territory_TheDreadfort
   m_TagString: Untagged
@@ -669,6 +735,18 @@ PolygonCollider2D:
       - {x: -0.039026976, y: 0.6203232}
       - {x: -0.0769676, y: 0.748353}
       - {x: -0.055399418, y: 0.8609442}
+--- !u!114 &354801279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354801276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &363364029
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 363364030}
   - component: {fileID: 363364031}
+  - component: {fileID: 363364032}
   m_Layer: 0
   m_Name: Territory_DornishMarshes
   m_TagString: Untagged
@@ -774,6 +853,18 @@ PolygonCollider2D:
       - {x: 0.7416587, y: 0.14850521}
       - {x: 0.7766123, y: 0.20454359}
       - {x: 0.6960465, y: 0.2535805}
+--- !u!114 &363364032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363364029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &399997728
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399997729}
   - component: {fileID: 399997730}
+  - component: {fileID: 399997731}
   m_Layer: 0
   m_Name: Territory_Barrowlands
   m_TagString: Untagged
@@ -869,6 +961,18 @@ PolygonCollider2D:
       - {x: 1.1713257, y: 0.01542902}
       - {x: 0.93555874, y: 0.030657053}
       - {x: 0.81086755, y: 0.18794483}
+--- !u!114 &399997731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399997728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &412301080
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412301081}
   - component: {fileID: 412301082}
+  - component: {fileID: 412301083}
   m_Layer: 0
   m_Name: Territory_StoneyShore
   m_TagString: Untagged
@@ -970,6 +1075,18 @@ PolygonCollider2D:
       - {x: 0.8240161, y: 0.5795109}
       - {x: 0.80101633, y: 0.62231183}
       - {x: 0.7307905, y: 0.85982674}
+--- !u!114 &412301083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412301080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &452344676
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 452344677}
   - component: {fileID: 452344678}
+  - component: {fileID: 452344679}
   m_Layer: 0
   m_Name: Territory_Tarth
   m_TagString: Untagged
@@ -1034,6 +1152,18 @@ PolygonCollider2D:
       - {x: 0.20874739, y: -0.15929103}
       - {x: 0.32168806, y: -0.032899857}
       - {x: 0.20820117, y: 0.34782308}
+--- !u!114 &452344679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452344676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567292776}
   - component: {fileID: 567292777}
+  - component: {fileID: 567292778}
   m_Layer: 0
   m_Name: Territory_Greenblood
   m_TagString: Untagged
@@ -1228,6 +1359,18 @@ PolygonCollider2D:
       - {x: 0.97182965, y: -0.12181902}
       - {x: 0.931291, y: 0.053865433}
       - {x: 0.92780983, y: 0.3148288}
+--- !u!114 &567292778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567292775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &590178453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590178454}
   - component: {fileID: 590178455}
+  - component: {fileID: 590178456}
   m_Layer: 0
   m_Name: Territory_TheArbor
   m_TagString: Untagged
@@ -1292,6 +1436,18 @@ PolygonCollider2D:
       - {x: -0.050300837, y: -0.18239117}
       - {x: 0.3572048, y: -0.06873155}
       - {x: 0.35033345, y: 0.12697977}
+--- !u!114 &590178456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590178453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606907784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 606907785}
   - component: {fileID: 606907786}
+  - component: {fileID: 606907787}
   m_Layer: 0
   m_Name: Territory_Oldtown
   m_TagString: Untagged
@@ -1378,6 +1535,18 @@ PolygonCollider2D:
       - {x: 0.75693417, y: 0.45758867}
       - {x: 0.5616157, y: 0.48837948}
       - {x: 0.41727066, y: 0.579205}
+--- !u!114 &606907787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606907784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639406423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 639406424}
   - component: {fileID: 639406425}
+  - component: {fileID: 639406426}
   m_Layer: 0
   m_Name: Territory_Rainwood
   m_TagString: Untagged
@@ -1470,6 +1640,18 @@ PolygonCollider2D:
       - {x: 0.9142134, y: 0.12642908}
       - {x: 1.0658247, y: 0.21121025}
       - {x: 1.1062799, y: 0.33673567}
+--- !u!114 &639406426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639406423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639766339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 639766340}
   - component: {fileID: 639766341}
+  - component: {fileID: 639766342}
   m_Layer: 0
   m_Name: Territory_Riverrun
   m_TagString: Untagged
@@ -1557,6 +1740,18 @@ PolygonCollider2D:
       - {x: 0.5783392, y: -0.0063220263}
       - {x: 0.62325317, y: 0.056908846}
       - {x: 0.6183746, y: 0.15955126}
+--- !u!114 &639766342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639766339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &698861340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698861341}
   - component: {fileID: 698861342}
+  - component: {fileID: 698861343}
   m_Layer: 0
   m_Name: Territory_Sunspear
   m_TagString: Untagged
@@ -1645,6 +1841,18 @@ PolygonCollider2D:
       - {x: 0.70758486, y: 0.09182167}
       - {x: 0.82927966, y: 0.23428679}
       - {x: 0.88136816, y: 0.3874163}
+--- !u!114 &698861343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698861340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &827026049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,6 +1863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827026050}
   - component: {fileID: 827026051}
+  - component: {fileID: 827026052}
   m_Layer: 0
   m_Name: Territory_Harrenhal
   m_TagString: Untagged
@@ -1736,6 +1945,18 @@ PolygonCollider2D:
       - {x: 0.88457775, y: 0.086429715}
       - {x: 0.92722666, y: 0.20839465}
       - {x: 0.83051944, y: 0.22705191}
+--- !u!114 &827026052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827026049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &861241226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861241227}
   - component: {fileID: 861241228}
+  - component: {fileID: 861241229}
   m_Layer: 0
   m_Name: Territory_CapeKraken
   m_TagString: Untagged
@@ -1816,6 +2038,18 @@ PolygonCollider2D:
       - {x: 0.8875766, y: 0.2423861}
       - {x: 0.95018256, y: 0.5020131}
       - {x: 0.8459728, y: 0.667538}
+--- !u!114 &861241229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861241226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &871930845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,6 +2060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871930846}
   - component: {fileID: 871930847}
+  - component: {fileID: 871930848}
   m_Layer: 0
   m_Name: Territory_Harlaw
   m_TagString: Untagged
@@ -1890,6 +2125,18 @@ PolygonCollider2D:
       - {x: 0.27759957, y: 0.21762566}
       - {x: 0.1103313, y: 0.33799487}
       - {x: 0.0029548407, y: 0.50366056}
+--- !u!114 &871930848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871930845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &874874591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,6 +2147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 874874592}
   - component: {fileID: 874874593}
+  - component: {fileID: 874874594}
   m_Layer: 0
   m_Name: Territory_Skagos
   m_TagString: Untagged
@@ -1958,6 +2206,18 @@ PolygonCollider2D:
       - {x: 0.016354263, y: -0.35591257}
       - {x: 0.23537052, y: -0.29118323}
       - {x: 0.404454, y: -0.03620535}
+--- !u!114 &874874594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874874591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &952705650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,6 +2228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952705651}
   - component: {fileID: 952705652}
+  - component: {fileID: 952705653}
   m_Layer: 0
   m_Name: Territory_Highgarden
   m_TagString: Untagged
@@ -2065,6 +2326,18 @@ PolygonCollider2D:
       - {x: 0.5024195, y: 0.33782005}
       - {x: 0.3992195, y: 0.33371162}
       - {x: 0.46983838, y: 0.50467724}
+--- !u!114 &952705653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952705650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &955773174
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,6 +2348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955773175}
   - component: {fileID: 955773176}
+  - component: {fileID: 955773177}
   m_Layer: 0
   m_Name: Territory_MountainsOfTheMoon
   m_TagString: Untagged
@@ -2181,6 +2455,18 @@ PolygonCollider2D:
       - {x: 1.2184414, y: 0.6144368}
       - {x: 1.1778301, y: 0.6875697}
       - {x: 1.0544498, y: 0.7408364}
+--- !u!114 &955773177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955773174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1037380614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037380615}
   - component: {fileID: 1037380616}
+  - component: {fileID: 1037380617}
   m_Layer: 0
   m_Name: Territory_TheTwins
   m_TagString: Untagged
@@ -2267,6 +2554,18 @@ PolygonCollider2D:
       - {x: 0.65885043, y: 0.26352274}
       - {x: 0.5341893, y: 0.3626557}
       - {x: 0.49783745, y: 0.49705476}
+--- !u!114 &1037380617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037380614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072545093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,6 +2576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072545094}
   - component: {fileID: 1072545095}
+  - component: {fileID: 1072545096}
   m_Layer: 0
   m_Name: Territory_BlackwaterRush
   m_TagString: Untagged
@@ -2371,6 +2671,18 @@ PolygonCollider2D:
       - {x: 1.0805323, y: -0.007817745}
       - {x: 1.0899442, y: 0.092342615}
       - {x: 0.9652225, y: 0.304295}
+--- !u!114 &1072545096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072545093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1082784141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,6 +2693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082784142}
   - component: {fileID: 1082784143}
+  - component: {fileID: 1082784144}
   m_Layer: 0
   m_Name: Territory_WhiteHarbor
   m_TagString: Untagged
@@ -2462,6 +2775,18 @@ PolygonCollider2D:
       - {x: 0.9088452, y: -0.039452076}
       - {x: 1.0012429, y: 0.1774776}
       - {x: 0.9510565, y: 0.38636082}
+--- !u!114 &1082784144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082784141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1089922810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089922811}
   - component: {fileID: 1089922812}
+  - component: {fileID: 1089922813}
   m_Layer: 0
   m_Name: Territory_GoldenTooth
   m_TagString: Untagged
@@ -2535,6 +2861,18 @@ PolygonCollider2D:
       - {x: 0.35148704, y: -0.24016702}
       - {x: 0.4321456, y: -0.13383949}
       - {x: 0.6371156, y: -0.13050014}
+--- !u!114 &1089922813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089922810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1145554187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,6 +2965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1190561978}
   - component: {fileID: 1190561979}
+  - component: {fileID: 1190561980}
   m_Layer: 0
   m_Name: Territory_CasterlyRock
   m_TagString: Untagged
@@ -2701,6 +3040,18 @@ PolygonCollider2D:
       - {x: 0.31178594, y: 0.27057743}
       - {x: 0.20506215, y: 0.3267883}
       - {x: 0.10969472, y: 0.44087237}
+--- !u!114 &1190561980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190561977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211043033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +3062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211043034}
   - component: {fileID: 1211043035}
+  - component: {fileID: 1211043036}
   m_Layer: 0
   m_Name: Territory_TheFingers
   m_TagString: Untagged
@@ -2781,6 +3133,18 @@ PolygonCollider2D:
       - {x: 1.0602775, y: 0.3733275}
       - {x: 0.9009938, y: 0.41538024}
       - {x: 0.85925484, y: 0.6405235}
+--- !u!114 &1211043036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211043033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1261065148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,6 +3155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261065149}
   - component: {fileID: 1261065150}
+  - component: {fileID: 1261065151}
   m_Layer: 0
   m_Name: Territory_Karhold
   m_TagString: Untagged
@@ -2883,6 +3248,18 @@ PolygonCollider2D:
       - {x: 0.94956756, y: -0.1171546}
       - {x: 1.0366228, y: 0.12615824}
       - {x: 0.96544075, y: 0.46724457}
+--- !u!114 &1261065151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261065148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1324701031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,6 +3270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324701032}
   - component: {fileID: 1324701033}
+  - component: {fileID: 1324701034}
   m_Layer: 0
   m_Name: Territory_Pyke
   m_TagString: Untagged
@@ -2952,6 +3330,18 @@ PolygonCollider2D:
       - {x: 0.3410504, y: 0.16231924}
       - {x: 0.26262784, y: 0.31875712}
       - {x: 0.1096946, y: 0.4408723}
+--- !u!114 &1324701034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324701031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1452336359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,6 +3352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452336360}
   - component: {fileID: 1452336361}
+  - component: {fileID: 1452336362}
   m_Layer: 0
   m_Name: Territory_BearIsland
   m_TagString: Untagged
@@ -3014,6 +3405,18 @@ PolygonCollider2D:
       - {x: 0.161318, y: -0.21837795}
       - {x: 0.3284806, y: -0.10313153}
       - {x: 0.3412099, y: 0.09292978}
+--- !u!114 &1452336362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452336359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1461439433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1508783702}
   - component: {fileID: 1508783703}
+  - component: {fileID: 1508783704}
   m_Layer: 0
   m_Name: Territory_ThreeTowers
   m_TagString: Untagged
@@ -3180,6 +3584,18 @@ PolygonCollider2D:
       - {x: 0.7078992, y: 0.6003046}
       - {x: 0.7830075, y: 0.6500516}
       - {x: 0.7855035, y: 0.71316046}
+--- !u!114 &1508783704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508783701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1547963303
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,6 +3606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1547963304}
   - component: {fileID: 1547963305}
+  - component: {fileID: 1547963306}
   m_Layer: 0
   m_Name: Territory_TheCrag
   m_TagString: Untagged
@@ -3261,6 +3678,18 @@ PolygonCollider2D:
       - {x: 0.8885013, y: 0.32942247}
       - {x: 0.862164, y: 0.3987388}
       - {x: 0.80036485, y: 0.4722664}
+--- !u!114 &1547963306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547963303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1576271663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,6 +3700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576271664}
   - component: {fileID: 1576271665}
+  - component: {fileID: 1576271666}
   m_Layer: 0
   m_Name: Territory_CrackclawPoint
   m_TagString: Untagged
@@ -3338,6 +3768,18 @@ PolygonCollider2D:
       - {x: 0.8148613, y: 0.30569923}
       - {x: 0.97577524, y: 0.6303671}
       - {x: 0.95719695, y: 0.69586027}
+--- !u!114 &1576271666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576271663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643449080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,6 +3790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643449081}
   - component: {fileID: 1643449082}
+  - component: {fileID: 1643449083}
   m_Layer: 0
   m_Name: Territory_Silverhill
   m_TagString: Untagged
@@ -3415,6 +3858,18 @@ PolygonCollider2D:
       - {x: 0.55449414, y: 0.2889812}
       - {x: 0.38320482, y: 0.32559967}
       - {x: 0.27294397, y: 0.37180537}
+--- !u!114 &1643449083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643449080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1681874810
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,6 +3880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1681874811}
   - component: {fileID: 1681874812}
+  - component: {fileID: 1681874813}
   m_Layer: 0
   m_Name: Territory_StormsEnd
   m_TagString: Untagged
@@ -3517,6 +3973,18 @@ PolygonCollider2D:
       - {x: 0.7707273, y: 0.42722726}
       - {x: 0.8225219, y: 0.58358073}
       - {x: 0.59071636, y: 0.7137069}
+--- !u!114 &1681874813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681874810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689142682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,6 +3995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689142683}
   - component: {fileID: 1689142684}
+  - component: {fileID: 1689142685}
   m_Layer: 0
   m_Name: Territory_TheNeck
   m_TagString: Untagged
@@ -3600,6 +4069,18 @@ PolygonCollider2D:
       - {x: 1.0722692, y: 0.46571994}
       - {x: 0.7820356, y: 0.6064371}
       - {x: 0.43181944, y: 0.62426835}
+--- !u!114 &1689142685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689142682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698129943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,6 +4091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1698129944}
   - component: {fileID: 1698129945}
+  - component: {fileID: 1698129946}
   m_Layer: 0
   m_Name: Territory_TheTrident
   m_TagString: Untagged
@@ -3690,6 +4172,18 @@ PolygonCollider2D:
       - {x: 0.6882221, y: -0.41405398}
       - {x: 0.8013742, y: -0.30798185}
       - {x: 0.9848069, y: -0.31295365}
+--- !u!114 &1698129946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698129943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1714575524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,6 +4194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714575525}
   - component: {fileID: 1714575526}
+  - component: {fileID: 1714575527}
   m_Layer: 0
   m_Name: Territory_TheEyrie
   m_TagString: Untagged
@@ -3789,6 +4284,18 @@ PolygonCollider2D:
       - {x: 1.0967603, y: 0.25511467}
       - {x: 1.3055699, y: 0.41503298}
       - {x: 1.1459866, y: 0.59305835}
+--- !u!114 &1714575527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714575524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1773168748
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +4306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773168749}
   - component: {fileID: 1773168750}
+  - component: {fileID: 1773168751}
   m_Layer: 0
   m_Name: Territory_Gulltown
   m_TagString: Untagged
@@ -3870,6 +4378,18 @@ PolygonCollider2D:
       - {x: 0.7139883, y: 0.050156415}
       - {x: 0.73612523, y: 0.14664859}
       - {x: 0.71480393, y: 0.28008825}
+--- !u!114 &1773168751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773168748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1791124708
 GameObject:
   m_ObjectHideFlags: 0
@@ -3880,6 +4400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791124709}
   - component: {fileID: 1791124710}
+  - component: {fileID: 1791124711}
   m_Layer: 0
   m_Name: Territory_Crakehall
   m_TagString: Untagged
@@ -3954,6 +4475,18 @@ PolygonCollider2D:
       - {x: 0.5055418, y: 0.5573318}
       - {x: 0.4605012, y: 0.7025769}
       - {x: 0.277848, y: 0.61450666}
+--- !u!114 &1791124711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791124708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1814640606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3964,6 +4497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814640607}
   - component: {fileID: 1814640608}
+  - component: {fileID: 1814640609}
   m_Layer: 0
   m_Name: Territory_Kingswood
   m_TagString: Untagged
@@ -4045,6 +4579,18 @@ PolygonCollider2D:
       - {x: 0.52564454, y: 0.45125675}
       - {x: 0.50055516, y: 0.546854}
       - {x: 0.44837117, y: 0.59372395}
+--- !u!114 &1814640609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814640606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893563914
 GameObject:
   m_ObjectHideFlags: 0
@@ -4055,6 +4601,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1893563915}
   - component: {fileID: 1893563916}
+  - component: {fileID: 1893563918}
+  - component: {fileID: 1893563917}
   m_Layer: 0
   m_Name: Territory_TheGift
   m_TagString: Untagged
@@ -4113,6 +4661,30 @@ PolygonCollider2D:
       - {x: 0.5420363, y: -0.49183273}
       - {x: 0.86784625, y: -0.36501765}
       - {x: 1.0808408, y: -0.05301243}
+--- !u!114 &1893563917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893563914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1893563918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893563914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1906577811
 GameObject:
   m_ObjectHideFlags: 0
@@ -4123,6 +4695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906577812}
   - component: {fileID: 1906577813}
+  - component: {fileID: 1906577814}
   m_Layer: 0
   m_Name: Territory_RedMountains
   m_TagString: Untagged
@@ -4235,6 +4808,18 @@ PolygonCollider2D:
       - {x: 1.3417687, y: 0.0545125}
       - {x: 1.3490868, y: 0.13648605}
       - {x: 1.4173244, y: 0.18237633}
+--- !u!114 &1906577814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906577811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1937206332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4245,6 +4830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937206333}
   - component: {fileID: 1937206334}
+  - component: {fileID: 1937206335}
   m_Layer: 0
   m_Name: Territory_TheMander
   m_TagString: Untagged
@@ -4345,6 +4931,18 @@ PolygonCollider2D:
       - {x: 0.95823294, y: 0.46058393}
       - {x: 0.89858985, y: 0.6118791}
       - {x: 0.8159108, y: 0.78765815}
+--- !u!114 &1937206335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937206332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1938423408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4355,6 +4953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1938423409}
   - component: {fileID: 1938423410}
+  - component: {fileID: 1938423411}
   m_Layer: 0
   m_Name: Territory_StoneySept
   m_TagString: Untagged
@@ -4428,6 +5027,18 @@ PolygonCollider2D:
       - {x: 0.5141028, y: 0.11283934}
       - {x: 0.4899595, y: 0.41461337}
       - {x: 0.4206938, y: 0.5018762}
+--- !u!114 &1938423411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938423408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1948653298
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,6 +5049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1948653299}
   - component: {fileID: 1948653300}
+  - component: {fileID: 1948653301}
   m_Layer: 0
   m_Name: Territory_Wolfswood
   m_TagString: Untagged
@@ -4517,6 +5129,18 @@ PolygonCollider2D:
       - {x: 1.0492269, y: -0.0036857128}
       - {x: 0.92389345, y: 0.11443663}
       - {x: 0.89464796, y: 0.4331159}
+--- !u!114 &1948653301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948653298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106270122
 GameObject:
   m_ObjectHideFlags: 0
@@ -4527,6 +5151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106270123}
   - component: {fileID: 2106270124}
+  - component: {fileID: 2106270125}
   m_Layer: 0
   m_Name: Territory_SearoadMarshes
   m_TagString: Untagged
@@ -4611,3 +5236,15 @@ PolygonCollider2D:
       - {x: 0.819, y: 0.066093445}
       - {x: 0.8110453, y: 0.15617609}
       - {x: 0.82245743, y: 0.29148072}
+--- !u!114 &2106270125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106270122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958a5c6b3e837543a6802df9232d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
