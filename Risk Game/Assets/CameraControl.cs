@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour {
 	// Start is called before the first frame update
 	private float speed = 0.5f;
-	private float verticalBound = 4.09f;
+	private float verticalBound;
 	private float zoomSize;
 
 	void Start() {
@@ -15,6 +15,7 @@ public class CameraControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		zoomSize = gameObject.GetComponent<Camera>().orthographicSize;
+		verticalBound = DetermineVerticalBound();
 
 		if (transform.position.y > verticalBound) {
 			transform.position = new Vector2(transform.position.x, verticalBound);
@@ -35,6 +36,7 @@ public class CameraControl : MonoBehaviour {
 			}
 		}
 		else if (zoomSize >= 7) {
+			Debug.Log("Vertical bound: " + verticalBound);
 			if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
 				ZoomIn();
 				Debug.Log("zoom in");
@@ -58,25 +60,31 @@ public class CameraControl : MonoBehaviour {
 		}
 	}
 
-	void ZoomIn() {
+	private void ZoomIn() {
 		zoomSize -= 0.5f;
 		gameObject.GetComponent<Camera>().orthographicSize = zoomSize;
 	}
 
-	void ZoomOut() {
+	private void ZoomOut() {
 		zoomSize += 0.5f;
 		gameObject.GetComponent<Camera>().orthographicSize = zoomSize;
 	}
 
-	void MoveCameraUp() {
+	private void MoveCameraUp() {
+		Debug.Log("verticalBound " + verticalBound);
+		Debug.Log("transform y " + transform.position.y);
 		if (transform.position.y < verticalBound) {
 			transform.Translate(Vector2.up * speed);
 		}
 	}
 
-	void MoveCameraDown() {
+	private void MoveCameraDown() {
 		if (transform.position.y > -verticalBound) {
 			transform.Translate(Vector2.down * speed);
 		}
+	}
+
+	private float DetermineVerticalBound() {
+		return 8f - zoomSize;
 	}
 }
