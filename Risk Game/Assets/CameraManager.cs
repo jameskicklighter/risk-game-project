@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraControl : MonoBehaviour {
+public class CameraManager : MonoBehaviour {
 	// Start is called before the first frame update
-	private float speed = 0.5f;
+	private readonly float speed = 0.5f;
 	private float verticalBound;
 	private float zoomSize;
 
