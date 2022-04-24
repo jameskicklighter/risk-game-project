@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TerritoryManager : MonoBehaviour {
-	public int key; // Needs to be public for outside access.
 	private PolygonCollider2D coll;
 	private LineRenderer border;
 	public static GameObject selectedTerritory;
