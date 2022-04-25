@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TerritoryObject {
-	public GameObject territory;
+	public GameObject territoryGameObj;
 	public bool hasCastle;
 	public List<TerritoryObject> adjTerritoryList;
 	// add owned Player ID
 
 	public TerritoryObject(GameObject territory, bool hasCastle) {
-		this.territory = territory;
+		this.territoryGameObj = territory;
 		this.hasCastle = hasCastle;
 		adjTerritoryList = new List<TerritoryObject>();
+		territory.GetComponent<TerritoryManager>().SetTerritoryInstance(this);
 	}
 
 	public void AddAdjTerritory(TerritoryObject adjTerritory) {
