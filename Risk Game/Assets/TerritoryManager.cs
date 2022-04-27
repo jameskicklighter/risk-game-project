@@ -7,12 +7,19 @@ public class TerritoryManager : MonoBehaviour {
 	private LineRenderer border;
 	private TerritoryObject territory;
 	public static GameObject selectedTerritory;
+	public GameObject armyCountCirclePrefab;
+	private GameObject armyCountCircle;
+	private int armyCount;
 	public static int highlightIntTracker = 0;
 	private int highlightInt = 2;
 
 	// Start is called before the first frame update
 	void Start() {
 		coll = gameObject.GetComponent<PolygonCollider2D>();
+		if (armyCountCirclePrefab != null) {
+			armyCountCircle = (GameObject)Instantiate(armyCountCirclePrefab, new Vector3(transform.position.x, transform.position.y, 9),
+			armyCountCirclePrefab.transform.rotation);
+		}
 		InitBorderPoints();
 	}
 
@@ -67,7 +74,7 @@ public class TerritoryManager : MonoBehaviour {
 		Debug.Log("clicked " + gameObject.name);
 		selectedTerritory = gameObject;
 		IncrementHighlightCounter();
-		HighlightBorder(Color.yellow);
+		HighlightBorder(new Color(Color.yellow.r, Color.yellow.g, Color.yellow.b, 0.7f));
 		HighlightAdjacentTerritories();
 	}
 
@@ -79,7 +86,7 @@ public class TerritoryManager : MonoBehaviour {
 
 	public void HighlightAdjacentTerritories() {
 		territory.adjTerritoryList.ForEach(delegate (TerritoryObject adjTerritory) {
-			adjTerritory.territoryGameObj.GetComponent<TerritoryManager>().HighlightBorder(Color.red);
+			adjTerritory.territoryGameObj.GetComponent<TerritoryManager>().HighlightBorder(new Color(Color.red.r, Color.red.g, Color.red.b, 0.7f));
 		});
 	}
 
