@@ -28,34 +28,34 @@ public class CameraManager : MonoBehaviour {
 		if (Input.GetKey(KeyCode.LeftControl) == false) {
 			if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
 				MoveCameraUp();
-				Debug.Log("up");
+				//Debug.Log("up");
 			}
 			else if (Input.GetAxis("Mouse ScrollWheel") < 0f) {
 				MoveCameraDown();
-				Debug.Log("down");
+				//Debug.Log("down");
 			}
 		}
 		else if (zoomSize >= 7) {
-			Debug.Log("Vertical bound: " + verticalBound);
+			//Debug.Log("Vertical bound: " + verticalBound);
 			if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
 				ZoomIn();
-				Debug.Log("zoom in");
+				//Debug.Log("zoom in");
 			}
 		}
 		else if (zoomSize <= 3.5) {
 			if (Input.GetAxis("Mouse ScrollWheel") < 0f) {
 				ZoomOut();
-				Debug.Log("zoom out");
+				//Debug.Log("zoom out");
 			}
 		}
 		else {
 			if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
 				ZoomIn();
-				Debug.Log("zoom in");
+				//Debug.Log("zoom in");
 			}
 			else if (Input.GetAxis("Mouse ScrollWheel") < 0f) {
 				ZoomOut();
-				Debug.Log("zoom out");
+				//Debug.Log("zoom out");
 			}
 		}
 	}
@@ -71,8 +71,8 @@ public class CameraManager : MonoBehaviour {
 	}
 
 	private void MoveCameraUp() {
-		Debug.Log("verticalBound " + verticalBound);
-		Debug.Log("transform y " + transform.position.y);
+		//Debug.Log("verticalBound " + verticalBound);
+		//Debug.Log("transform y " + transform.position.y);
 		if (transform.position.y < verticalBound) {
 			transform.Translate(Vector2.up * speed);
 		}

@@ -6,12 +6,14 @@ public class TerritoryObject {
 	public GameObject territoryGameObj;
 	public bool hasCastle;
 	public List<TerritoryObject> adjTerritoryList;
+	public static List<TerritoryObject> territoryList = new List<TerritoryObject>();
 	// add owned Player ID
 
 	public TerritoryObject(GameObject territory, bool hasCastle) {
 		this.territoryGameObj = territory;
 		this.hasCastle = hasCastle;
 		adjTerritoryList = new List<TerritoryObject>();
+		territoryList.Add(this);
 		territory.GetComponent<TerritoryManager>().SetTerritoryInstance(this);
 	}
 
