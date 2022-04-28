@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+	public bool isGameActive = false;
 	private TerritoryObject[] territoryArrayAll;
 	public GameObject[] playerIDArray;
 	public Color[] playerColors;
-	private int turnPlayerID;
+	private int turnPlayerID = 0;
+	private int turnMode = 0; // 0 = Reinforce, 1 = Attack, 2 = Maneuver. 
+	public TextMeshProUGUI[] info;
 
 	// Territories.
 	public TerritoryObject TheGift;
@@ -60,15 +65,37 @@ public class GameManager : MonoBehaviour {
 
 	// Start is called before the first frame update
 	private void Start() {
-		InitializeMapData();
-		territoryArrayAll = TerritoryObject.territoryList.ToArray();
-		ShuffleTerritoryArray(territoryArrayAll);
-		InitializePlayerData();
+		isGameActive = false;
+		StartCoroutine(PauseStart());
+	}
+
+	IEnumerator PauseStart() {
+		while (isGameActive == false) {
+			yield return isGameActive;
+		}
+		if (isGameActive) {
+			InitializeMapData();
+			territoryArrayAll = TerritoryObject.territoryList.ToArray();
+			ShuffleTerritoryArray(territoryArrayAll);
+			InitializePlayerData();
+			ScoreInfo();
+		}
+	}
+
+	public void StartGame() {
+		Debug.Log("Start button clicked.");
+		isGameActive = true;
+	}
+
+	public void QuitGame() {
+		isGameActive = false;
 	}
 
 	// Update is called once per frame
 	private void Update() {
+		if (isGameActive) {
 
+		}
 	}
 
 	// First assign the territory game objects to an instance of TerritoryObject.
@@ -452,7 +479,7 @@ public class GameManager : MonoBehaviour {
 			playerIDArray[playerIDIndex].GetComponent<PlayerManager>().AddTerritoryToListInitial(territoryArrayAll[i]);
 			playerIDIndex = (playerIDIndex + 1) % 5;
 		}
-		
+
 	}
 
 	public void ShuffleTerritoryArray(TerritoryObject[] array) {
@@ -469,5 +496,10 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void ScoreInfo() {
+		for (int i = 0; i < info.Length; i++) {
+			info[i].text = "P" + (i + 1) + " Territories: " + playerIDArray[i].GetComponent<PlayerManager>().GetNumberOfTerritories();
+		}
+	}
 
 }

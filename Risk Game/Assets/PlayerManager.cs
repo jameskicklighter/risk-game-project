@@ -26,6 +26,10 @@ public class PlayerManager : MonoBehaviour {
 		//Debug.Log("Player " + playerIDIndex + "'s Color: " + color);
 	}
 
+	public int GetNumberOfTerritories() {
+		return territoryListMine.Count;
+	}
+
 	public void AddTerritoryToListInitial(TerritoryObject territory) {
 		if (territoryListMine == null) {
 			territoryListMine = new List<TerritoryObject>();
@@ -33,7 +37,6 @@ public class PlayerManager : MonoBehaviour {
 		AddTerritoryToList(territory);
 		// Starting armies is 2.
 		territory.territoryGameObj.GetComponent<TerritoryManager>().SetArmyCount(2);
-		RemoveTerritoryFromList(territory);
 	}
 
 	public void AddTerritoryToList(TerritoryObject territory) {

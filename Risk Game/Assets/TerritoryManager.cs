@@ -18,11 +18,13 @@ public class TerritoryManager : MonoBehaviour {
 	private int colorMode = 0; // 0 is default, 1 is other.
 	private bool isSelectable = true;
 	private bool hasStarted = false;
+	private GameManager gameManager;
 
 	// Start is called before the first frame update
 	void Start() {
 		if (hasStarted == true)
 			return;
+		gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 		hasStarted = true;
 		highlightColor = Color.white;
 		adjHighlightColor = new Color(1.0f, 0.0f, 0.0f, 0.7f);
@@ -32,41 +34,51 @@ public class TerritoryManager : MonoBehaviour {
 		if (armyCountCirclePrefab != null) {
 			armyCountCircle = (GameObject)Instantiate(armyCountCirclePrefab, new Vector3(transform.position.x, transform.position.y, 9),
 			armyCountCirclePrefab.transform.rotation);
+			armyCountCircle.SetActive(false);
 		}
 		InitBorderPoints();
 	}
 
 	// Update is called once per frame
 	void Update() {
-		// From the human perspective, only allow owned territories to be selectable.
-		if (GameObject.Equals(ownerID, GameObject.Find("Player 1"))) {
-			isSelectable = true;
-		}
-		else { // Should still be selectable if highlighted for a special purpose.
-			isSelectable = colorMode == 1;
-		}
+		if (gameManager.isGameActive) {
+			// From the human perspective, only allow owned territories to be selectable.
+			if (GameObject.Equals(ownerID, GameObject.Find("Player 1"))) {
+				if (selectedTerritory != null && colorMode == 0)
+					isSelectable = false;
+				else
+					isSelectable = true;
+			}
+			else { // Should still be selectable if highlighted for a special purpose.
+				isSelectable = colorMode == 1;
+			}
 
-		if (highlightInt != highlightIntTracker) {
-			if (colorMode == 1) {
-				//Debug.Log("changing highlighted color");
-				colorMode = 0;
-				SetBorderColor(defaultColor);
+			if (highlightInt != highlightIntTracker) {
+				if (colorMode == 1) {
+					//Debug.Log("changing highlighted color");
+					colorMode = 0;
+					SetBorderColor(defaultColor);
+				}
+				if (selectedTerritory == null) {
+					border.enabled = true;
+					armyCountCircle.SetActive(true);
+				}
+				else {
+					border.enabled = false;
+					armyCountCircle.SetActive(false);
+				}
+				// If we aren't supposed to be highlighted, make sure we stay one behind
+				// the counter in case it is incremented again. The +3 helps us avoid 
+				// computing modulo from negative number (in the case of the highlight tracker
+				// being equal to 0.
+				if (highlightInt != (highlightIntTracker + 3 - 1) % 3) {
+					highlightInt = (highlightIntTracker + 3 - 1) % 3;
+				}
 			}
-			if (selectedTerritory == null) {
-				border.enabled = true;
-				armyCountCircle.SetActive(true);
-			}
-			else {
-				border.enabled = false;
-				armyCountCircle.SetActive(false);
-			}
-			// If we aren't supposed to be highlighted, make sure we stay one behind
-			// the counter in case it is incremented again. The +3 helps us avoid 
-			// computing modulo from negative number (in the case of the highlight tracker
-			// being equal to 0.
-			if (highlightInt != (highlightIntTracker + 3 - 1) % 3) {
-				highlightInt = (highlightIntTracker + 3 - 1) % 3;
-			}
+		}
+		else {
+			border.enabled = false;
+			armyCountCircle.SetActive(false);
 		}
 	}
 
@@ -78,7 +90,7 @@ public class TerritoryManager : MonoBehaviour {
 
 	private void InitBorderPoints() {
 		border = gameObject.GetComponent<LineRenderer>();
-		border.enabled = true;
+		border.enabled = false;
 		border.material = new Material(Shader.Find("Sprites/Default"));
 		border.startWidth = 0.03f;
 		border.endWidth = 0.03f;
@@ -102,6 +114,7 @@ public class TerritoryManager : MonoBehaviour {
 	public void SetBorderColor(Color color) {
 		border.startColor = color;
 		border.endColor = color;
+		armyCountCircle.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, 0.8f);
 	}
 
 	private void IncrementHighlightCounter() {
@@ -140,7 +153,7 @@ public class TerritoryManager : MonoBehaviour {
 	}
 
 	private void OnMouseDown() {
-		if (isSelectable) {
+		if (isSelectable && gameManager.isGameActive) {
 			Debug.Log("clicked Player " + ownerID.name + "'s " + gameObject.name);
 			if (GameObject.Equals(selectedTerritory, gameObject)) {
 				IncrementHighlightCounter();
@@ -151,7 +164,7 @@ public class TerritoryManager : MonoBehaviour {
 			selectedTerritory = gameObject;
 			IncrementHighlightCounter();
 			HighlightBorder(highlightColor);
-			HighlightAdjacentTerritories();
+			HighlightReachableFriendlyTerritories();
 			//Debug.Log("Highlight Int: " + highlightInt);
 		}
 	}
