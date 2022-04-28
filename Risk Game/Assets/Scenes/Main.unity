@@ -218,6 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &50221746
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -419,6 +421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &89273730
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -621,6 +625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &189207164
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -832,6 +838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &227359647
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -930,36 +938,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!1 &228108525
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 228108526}
-  m_Layer: 0
-  m_Name: Region
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &228108526
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228108525}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288328055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &288328059
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1249,6 +1229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &354801280
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1467,6 +1449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &363364033
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1629,7 +1613,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &399997728
 GameObject:
@@ -1741,6 +1725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &399997732
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1851,7 +1837,7 @@ GameObject:
   - component: {fileID: 404649630}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1883,6 +1869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIDIndex: 0
+  reinforcements: 0
 --- !u!1 &412301080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +1986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &412301084
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2176,6 +2165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &452344680
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2304,7 +2295,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571512963}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2418,9 +2409,10 @@ GameObject:
   m_Component:
   - component: {fileID: 486177604}
   - component: {fileID: 486177605}
+  - component: {fileID: 486177606}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Computer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2452,6 +2444,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIDIndex: 1
+  reinforcements: 0
+--- !u!114 &486177606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486177603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded1cf21a6fac13499b31390107500b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,6 +2666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &567292779
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2851,13 +2858,16 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1261810899}
+  - {fileID: 1004124302}
   - {fileID: 617226523}
   - {fileID: 1558138334}
   - {fileID: 453791218}
   - {fileID: 1950762590}
   - {fileID: 1015557301}
+  - {fileID: 819763098}
+  - {fileID: 661031905}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2943,6 +2953,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &590178457
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3142,6 +3154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &606907788
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3270,7 +3284,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571512963}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3481,6 +3495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &639406427
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3681,6 +3697,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &639766343
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3812,8 +3830,142 @@ Transform:
   - {fileID: 2048882510}
   - {fileID: 1779743815}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &661031904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 661031905}
+  - component: {fileID: 661031907}
+  - component: {fileID: 661031906}
+  m_Layer: 5
+  m_Name: Turn State
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &661031905
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661031904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 571512963}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 849, y: 155}
+  m_SizeDelta: {x: 210, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &661031906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661031904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'State:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278979084
+  m_fontColor: {r: 0.047169805, g: 0.04116233, b: 0.046765458, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 27
+  m_fontSizeBase: 27
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &661031907
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661031904}
+  m_CullTransparentMesh: 1
 --- !u!1 &698861340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,6 +4069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &698861344
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4015,6 +4169,140 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!1 &819763097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 819763098}
+  - component: {fileID: 819763100}
+  - component: {fileID: 819763099}
+  m_Layer: 5
+  m_Name: Current Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &819763098
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819763097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 571512963}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 849, y: 214}
+  m_SizeDelta: {x: 210, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &819763099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819763097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Current:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278979084
+  m_fontColor: {r: 0.047169805, g: 0.04116233, b: 0.046765458, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 27
+  m_fontSizeBase: 27
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &819763100
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819763097}
+  m_CullTransparentMesh: 1
 --- !u!1 &827026049
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,6 +4409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &827026053
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4314,6 +4604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &861241230
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4501,6 +4793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &871930849
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4682,6 +4976,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &874874595
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4902,6 +5198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &952705654
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5131,6 +5429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &955773178
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5242,12 +5542,12 @@ GameObject:
   - component: {fileID: 1004124304}
   - component: {fileID: 1004124303}
   m_Layer: 5
-  m_Name: Quit Button
+  m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1004124302
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5260,12 +5560,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1611319084}
-  m_Father: {fileID: 1261810899}
+  m_Father: {fileID: 571512963}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: -846, y: 435}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1004124303
@@ -5314,7 +5614,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1345119361}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: ContinueButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5392,7 +5692,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571512963}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5597,6 +5897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1037380618
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5814,6 +6116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1072545097
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6018,6 +6322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1082784145
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6204,6 +6510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1089922814
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6312,9 +6620,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1090388757}
   - component: {fileID: 1090388758}
+  - component: {fileID: 1090388759}
   m_Layer: 0
   m_Name: Player 3
-  m_TagString: Untagged
+  m_TagString: Computer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6346,6 +6655,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIDIndex: 2
+  reinforcements: 0
+--- !u!114 &1090388759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090388756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded1cf21a6fac13499b31390107500b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1145554187
 GameObject:
   m_ObjectHideFlags: 0
@@ -6527,6 +6849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1190561981
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6720,6 +7044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1211043037
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6935,6 +7261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1261065152
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -7064,7 +7392,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1568487701}
-  - {fileID: 1004124302}
   m_Father: {fileID: 571512963}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7251,6 +7578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1324701035
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -7378,7 +7707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1345119361
 MonoBehaviour:
@@ -7405,12 +7734,17 @@ MonoBehaviour:
   - {r: 0.08317016, g: 0.8396226, b: 0.23429927, a: 0}
   - {r: 0.9485262, g: 0.9811321, b: 0.254539, a: 0}
   - {r: 0.9433962, g: 0.53844786, b: 0.9165487, a: 0}
+  turnPlayer: 0
   info:
   - {fileID: 617226524}
   - {fileID: 1558138335}
   - {fileID: 453791219}
   - {fileID: 1950762591}
   - {fileID: 1015557302}
+  currentTurnPlayer: {fileID: 819763099}
+  currentState: {fileID: 661031906}
+  continueClicked: 0
+  continueButtonObj: {fileID: 1004124301}
 --- !u!1 &1452336359
 GameObject:
   m_ObjectHideFlags: 0
@@ -7488,6 +7822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1452336363
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -7767,6 +8103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1508783705
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -7961,6 +8299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1547963307
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -8089,7 +8429,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571512963}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8419,6 +8759,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1576271667
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -8529,7 +8871,7 @@ GameObject:
   - component: {fileID: 1611319086}
   - component: {fileID: 1611319085}
   m_Layer: 5
-  m_Name: Quit Text
+  m_Name: Continue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8574,7 +8916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8743,6 +9085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1643449084
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -8958,6 +9302,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1681874814
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -9154,6 +9500,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1689142686
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -9357,6 +9705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1698129947
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -9569,6 +9919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1714575528
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -9763,6 +10115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1773168752
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -9871,9 +10225,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1779743815}
   - component: {fileID: 1779743816}
+  - component: {fileID: 1779743817}
   m_Layer: 0
   m_Name: Player 5
-  m_TagString: Untagged
+  m_TagString: Computer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9905,6 +10260,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIDIndex: 4
+  reinforcements: 0
+--- !u!114 &1779743817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779743814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded1cf21a6fac13499b31390107500b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1791124708
 GameObject:
   m_ObjectHideFlags: 0
@@ -10004,6 +10372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1791124712
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -10208,6 +10578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1814640610
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -10389,6 +10761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1893563918
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -10624,6 +10998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1906577815
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -10847,6 +11223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1937206336
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -11043,6 +11421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1938423412
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -11245,6 +11625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &1948653302
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -11373,7 +11755,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571512963}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11487,9 +11869,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2048882510}
   - component: {fileID: 2048882511}
+  - component: {fileID: 2048882512}
   m_Layer: 0
   m_Name: Player 4
-  m_TagString: Untagged
+  m_TagString: Computer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11521,6 +11904,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIDIndex: 3
+  reinforcements: 0
+--- !u!114 &2048882512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048882509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded1cf21a6fac13499b31390107500b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106270122
 GameObject:
   m_ObjectHideFlags: 0
@@ -11630,6 +12026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armyCountCirclePrefab: {fileID: 3004784639234623506, guid: d8cf85439454b7445ab99df00505f970, type: 3}
+  highlightInt: 2
+  maneuvered: 0
 --- !u!120 &2106270126
 LineRenderer:
   m_ObjectHideFlags: 0

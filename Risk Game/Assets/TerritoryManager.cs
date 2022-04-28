@@ -8,17 +8,21 @@ public class TerritoryManager : MonoBehaviour {
 	private LineRenderer border;
 	private TerritoryObject territory;
 	public static GameObject selectedTerritory;
+	public static GameObject territoryToAttack;
+	public static GameObject territoryToMoveTo;
 	public GameObject armyCountCirclePrefab;
 	private GameObject armyCountCircle;
+	private SpriteRenderer armyCountCircleRenderer;
 	private int armyCount;
 	public static int highlightIntTracker = 0;
-	private int highlightInt = 2;
+	public int highlightInt = 2;
 	private GameObject ownerID;
 	private Color defaultColor, highlightColor, adjHighlightColor, moveHighlightColor;
 	private int colorMode = 0; // 0 is default, 1 is other.
 	private bool isSelectable = true;
 	private bool hasStarted = false;
 	private GameManager gameManager;
+	public bool maneuvered = false;
 
 	// Start is called before the first frame update
 	void Start() {
@@ -34,6 +38,7 @@ public class TerritoryManager : MonoBehaviour {
 		if (armyCountCirclePrefab != null) {
 			armyCountCircle = (GameObject)Instantiate(armyCountCirclePrefab, new Vector3(transform.position.x, transform.position.y, 9),
 			armyCountCirclePrefab.transform.rotation);
+			armyCountCircleRenderer = armyCountCircle.GetComponent<SpriteRenderer>();
 			armyCountCircle.SetActive(false);
 		}
 		InitBorderPoints();
@@ -42,15 +47,26 @@ public class TerritoryManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		if (gameManager.isGameActive) {
-			// From the human perspective, only allow owned territories to be selectable.
-			if (GameObject.Equals(ownerID, GameObject.Find("Player 1"))) {
-				if (selectedTerritory != null && colorMode == 0)
-					isSelectable = false;
-				else
-					isSelectable = true;
+			// From the human perspective, only allow owned territories to be selectable
+			// when it is their turn.
+			if (gameManager.turnPlayer == TurnPlayer.P1) {
+				if (GameObject.Equals(ownerID, GameObject.Find("Player 1"))) {
+					if (selectedTerritory != null && colorMode == 0)
+						isSelectable = false;
+					else
+						isSelectable = true;
+				}
+				// Territories we do not control should be selectable under certain
+				// circumstances unless we are reinforcing our own at the moment.
+				else {
+					if (PlayerManager.turnState == TurnState.REINFORCE)
+						isSelectable = false;
+					else
+						isSelectable = colorMode == 1;
+				}
 			}
-			else { // Should still be selectable if highlighted for a special purpose.
-				isSelectable = colorMode == 1;
+			else {
+				isSelectable = false;
 			}
 
 			if (highlightInt != highlightIntTracker) {
@@ -59,14 +75,41 @@ public class TerritoryManager : MonoBehaviour {
 					colorMode = 0;
 					SetBorderColor(defaultColor);
 				}
-				if (selectedTerritory == null) {
-					border.enabled = true;
-					armyCountCircle.SetActive(true);
+
+				if (gameManager.turnPlayer == TurnPlayer.P1) {
+					if  (PlayerManager.turnState == TurnState.REINFORCE) {
+						border.enabled = false;
+						armyCountCircle.SetActive(true);
+						armyCountCircleRenderer.color = new Color(armyCountCircleRenderer.color.r,
+							armyCountCircleRenderer.color.g, armyCountCircleRenderer.color.b, 0.5f);
+					}
+					else {
+						armyCountCircleRenderer.color = new Color(armyCountCircleRenderer.color.r,
+							armyCountCircleRenderer.color.g, armyCountCircleRenderer.color.b, 0.8f);
+						if (selectedTerritory != null) {
+							border.enabled = false;
+							armyCountCircle.SetActive(false);
+						}
+						else {
+							border.enabled = true;
+							armyCountCircle.SetActive(true);
+						}
+					}
 				}
 				else {
-					border.enabled = false;
-					armyCountCircle.SetActive(false);
+					armyCountCircle.SetActive(true);
+					if (ownerID.GetComponent<PlayerManager>().playerIDIndex == gameManager.turnPlayerID) {
+						border.enabled = true;
+						armyCountCircleRenderer.color = new Color(armyCountCircleRenderer.color.r,
+							armyCountCircleRenderer.color.g, armyCountCircleRenderer.color.b, 0.8f);
+					}
+					else {
+						border.enabled = false;
+						armyCountCircleRenderer.color = new Color(armyCountCircleRenderer.color.r,
+							armyCountCircleRenderer.color.g, armyCountCircleRenderer.color.b, 0.4f);
+					}
 				}
+				
 				// If we aren't supposed to be highlighted, make sure we stay one behind
 				// the counter in case it is incremented again. The +3 helps us avoid 
 				// computing modulo from negative number (in the case of the highlight tracker
@@ -74,6 +117,10 @@ public class TerritoryManager : MonoBehaviour {
 				if (highlightInt != (highlightIntTracker + 3 - 1) % 3) {
 					highlightInt = (highlightIntTracker + 3 - 1) % 3;
 				}
+			}
+			else {
+				armyCountCircleRenderer.color = new Color(armyCountCircleRenderer.color.r,
+					armyCountCircleRenderer.color.g, armyCountCircleRenderer.color.b, 1.0f);
 			}
 		}
 		else {
@@ -84,6 +131,10 @@ public class TerritoryManager : MonoBehaviour {
 
 	// ==================================================
 	// Initialization Functions
+	public TerritoryObject GetTerritoryInstance() {
+		return territory;
+	}
+
 	public void SetTerritoryInstance(TerritoryObject territory) {
 		this.territory = territory;
 	}
@@ -114,10 +165,10 @@ public class TerritoryManager : MonoBehaviour {
 	public void SetBorderColor(Color color) {
 		border.startColor = color;
 		border.endColor = color;
-		armyCountCircle.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, 0.8f);
+		armyCountCircleRenderer.color = new Color(color.r, color.g, color.b, 0.8f);
 	}
 
-	private void IncrementHighlightCounter() {
+	public static void IncrementHighlightCounter() {
 		// 0, 1, 2
 		highlightIntTracker++;
 		if (highlightIntTracker > 2) {
@@ -132,7 +183,7 @@ public class TerritoryManager : MonoBehaviour {
 		SetBorderColor(color);
 	}
 
-	public void HighlightAdjacentTerritories() {
+	public void HighlightAdjacentEnemyTerritories() {
 		territory.adjTerritoryList.ForEach(delegate (TerritoryObject adjTerritory) {
 			TerritoryManager temp = adjTerritory.territoryGameObj.GetComponent<TerritoryManager>();
 			if (GameObject.Equals(ownerID, temp.GetOwnerID()) == false) {
@@ -152,21 +203,103 @@ public class TerritoryManager : MonoBehaviour {
 		});
 	}
 
-	private void OnMouseDown() {
+	private void OnMouseDown() { // Only the human P1 can use this.
 		if (isSelectable && gameManager.isGameActive) {
 			Debug.Log("clicked Player " + ownerID.name + "'s " + gameObject.name);
-			if (GameObject.Equals(selectedTerritory, gameObject)) {
-				IncrementHighlightCounter();
-				//Debug.Log("Highlight Int: " + highlightInt);
-				selectedTerritory = null;
-				return;
+			switch (PlayerManager.turnState) {
+				case TurnState.REINFORCE:
+					maneuvered = false;
+					selectedTerritory = gameObject;
+					ownerID.GetComponent<PlayerManager>().reinforcements--;
+					SetArmyCount(GetArmyCount() + 1);
+					break;
+				case TurnState.ATTACK:
+					if (GameObject.Equals(selectedTerritory, gameObject)) {
+						IncrementHighlightCounter();
+						//Debug.Log("Highlight Int: " + highlightInt);
+						selectedTerritory = null;
+						territoryToAttack = null;
+						return;
+					}
+					else if (GameObject.Equals(territoryToAttack, gameObject)) {
+						PlayerManager.CommenceAttack(selectedTerritory.GetComponent<TerritoryManager>(),
+							territoryToAttack.GetComponent<TerritoryManager>());
+						selectedTerritory = null;
+						territoryToAttack = null;
+						return;
+					}
+
+					if (selectedTerritory == null) {
+						// Can't attack if we don't have more than one army on the territory.
+						if (GetArmyCount() > 1) {
+							selectedTerritory = gameObject;
+							IncrementHighlightCounter();
+							HighlightBorder(highlightColor);
+							HighlightAdjacentEnemyTerritories();
+						}
+					}
+					else { // We already selected a territory to attack from, now we have selected an enemy's.
+						territoryToAttack = gameObject;
+						IncrementHighlightCounter();
+						selectedTerritory.GetComponent<TerritoryManager>().HighlightBorder(gameManager.playerColors[0]);
+						HighlightBorder(ownerID.GetComponent<PlayerManager>().GetColor());
+					}
+					break;
+				case TurnState.MANEUVER:
+					if (GameObject.Equals(selectedTerritory, gameObject)) {
+						IncrementHighlightCounter();
+						//Debug.Log("Highlight Int: " + highlightInt);
+						selectedTerritory = null;
+						if (territoryToMoveTo.GetComponent<TerritoryManager>().maneuvered == true)
+							gameManager.continueClicked = true;
+						return;
+					}
+					else if (GameObject.Equals(territoryToMoveTo, gameObject)) {
+						if (selectedTerritory.GetComponent<TerritoryManager>().GetArmyCount() > 1) {
+							PlayerManager.CommenceManeuver(selectedTerritory.GetComponent<TerritoryManager>(),
+								territoryToMoveTo.GetComponent<TerritoryManager>());
+						}
+						else {
+							if (maneuvered == true)
+								gameManager.continueClicked = true;
+						}
+
+						maneuvered = true; // only one maneuver allowed.
+						return;
+					}
+
+					if (selectedTerritory == null) {
+						// Can't maneuver from here if we don't have more than one army on the territory.
+						if (GetArmyCount() > 1) {
+							selectedTerritory = gameObject;
+							IncrementHighlightCounter();
+							HighlightBorder(highlightColor);
+							HighlightReachableFriendlyTerritories();
+						}
+					}
+					else { // We already selected a territory to move from, now we selected another of ours to move to.
+						territoryToMoveTo = gameObject;
+					}
+					break;
+				default:
+					if (GameObject.Equals(selectedTerritory, gameObject)) {
+						IncrementHighlightCounter();
+						//Debug.Log("Highlight Int: " + highlightInt);
+						selectedTerritory = null;
+						return;
+					}
+					selectedTerritory = gameObject;
+					IncrementHighlightCounter();
+					HighlightBorder(highlightColor);
+					HighlightReachableFriendlyTerritories();
+					//Debug.Log("Highlight Int: " + highlightInt);
+					break;
 			}
-			selectedTerritory = gameObject;
-			IncrementHighlightCounter();
-			HighlightBorder(highlightColor);
-			HighlightReachableFriendlyTerritories();
-			//Debug.Log("Highlight Int: " + highlightInt);
 		}
+	}
+
+	public bool SpecialSelectionActive() {
+		return selectedTerritory != null; // || (gameManager.turnPlayer == TurnPlayer.P1 && PlayerManager.turnState == TurnState.REINFORCE)
 	}
 	// ==================================================
 

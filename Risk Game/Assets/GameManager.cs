@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public enum TurnState { REINFORCE, ATTACK, MANEUVER, DONE }
+public enum TurnPlayer { P1, P2, P3, P4, P5 }
 
 public class GameManager : MonoBehaviour {
 	public bool isGameActive = false;
 	private TerritoryObject[] territoryArrayAll;
 	public GameObject[] playerIDArray;
 	public Color[] playerColors;
-	private int turnPlayerID = 0;
-	private int turnMode = 0; // 0 = Reinforce, 1 = Attack, 2 = Maneuver. 
+	public TurnPlayer turnPlayer = TurnPlayer.P5;
+	public int turnPlayerID;
 	public TextMeshProUGUI[] info;
+	public TextMeshProUGUI currentTurnPlayer;
+	public TextMeshProUGUI currentState;
+	public bool continueClicked = false;
+	public GameObject continueButtonObj;
 
 	// Territories.
 	public TerritoryObject TheGift;
@@ -71,14 +78,17 @@ public class GameManager : MonoBehaviour {
 
 	IEnumerator PauseStart() {
 		while (isGameActive == false) {
-			yield return isGameActive;
+			yield return new WaitUntil(() => isGameActive == true);
 		}
 		if (isGameActive) {
+			Debug.Log("Game is active");
 			InitializeMapData();
 			territoryArrayAll = TerritoryObject.territoryList.ToArray();
 			ShuffleTerritoryArray(territoryArrayAll);
 			InitializePlayerData();
-			ScoreInfo();
+			StartCoroutine(ControlScore());
+			turnPlayer = TurnPlayer.P1;
+			StartTurn(turnPlayer);
 		}
 	}
 
@@ -87,15 +97,13 @@ public class GameManager : MonoBehaviour {
 		isGameActive = true;
 	}
 
-	public void QuitGame() {
-		isGameActive = false;
+	public void ContinueButton() {
+		continueClicked = true;
 	}
 
 	// Update is called once per frame
 	private void Update() {
-		if (isGameActive) {
 
-		}
 	}
 
 	// First assign the territory game objects to an instance of TerritoryObject.
@@ -224,6 +232,7 @@ public class GameManager : MonoBehaviour {
 		TheNeck.AddAdjTerritory(WhiteHarbor);
 		TheNeck.AddAdjTerritory(Barrowlands);
 		TheNeck.AddAdjTerritory(CapeKraken);
+		TheNeck.AddAdjTerritory(MountainsOfTheMoon);
 		TheNeck.AddAdjTerritory(TheTwins);
 		TheNeck.AddAdjTerritory(Harlaw);
 		// Cape Kraken
@@ -240,6 +249,7 @@ public class GameManager : MonoBehaviour {
 		TheEyrie.AddAdjTerritory(MountainsOfTheMoon);
 		TheEyrie.AddAdjTerritory(Gulltown);
 		// Mountains of the Moon
+		MountainsOfTheMoon.AddAdjTerritory(TheNeck);
 		MountainsOfTheMoon.AddAdjTerritory(TheFingers);
 		MountainsOfTheMoon.AddAdjTerritory(TheEyrie);
 		MountainsOfTheMoon.AddAdjTerritory(TheTwins);
@@ -496,9 +506,41 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public void ScoreInfo() {
-		for (int i = 0; i < info.Length; i++) {
-			info[i].text = "P" + (i + 1) + " Territories: " + playerIDArray[i].GetComponent<PlayerManager>().GetNumberOfTerritories();
+	IEnumerator ControlScore() {
+		while (isGameActive) {
+			yield return new WaitForEndOfFrame();
+			for (int i = 0; i < info.Length; i++) {
+				info[i].text = "P" + (i + 1) + " Territories: " + playerIDArray[i].GetComponent<PlayerManager>().GetNumberOfTerritories();
+			}
+			currentTurnPlayer.text = "Current: " + turnPlayer;
+			currentState.text = "State: " + PlayerManager.turnState;
+		}
+	}
+
+	public void StartTurn(TurnPlayer turnPlayer) {
+		this.turnPlayer = turnPlayer;
+		Debug.Log("Starting turn for " + turnPlayer);
+		switch (turnPlayer) {
+			case TurnPlayer.P1:
+				turnPlayerID = 0;
+				playerIDArray[0].GetComponent<PlayerManager>().HandleTurn(TurnState.REINFORCE);
+				break;
+			case TurnPlayer.P2:
+				turnPlayerID = 1;
+				playerIDArray[1].GetComponent<PlayerManager>().HandleTurn(TurnState.REINFORCE);
+				break;
+			case TurnPlayer.P3:
+				turnPlayerID = 2;
+				playerIDArray[2].GetComponent<PlayerManager>().HandleTurn(TurnState.REINFORCE);
+				break;
+			case TurnPlayer.P4:
+				turnPlayerID = 3;
+				playerIDArray[3].GetComponent<PlayerManager>().HandleTurn(TurnState.REINFORCE);
+				break;
+			case TurnPlayer.P5:
+				turnPlayerID = 4;
+				playerIDArray[4].GetComponent<PlayerManager>().HandleTurn(TurnState.REINFORCE);
+				break;
 		}
 	}
 
