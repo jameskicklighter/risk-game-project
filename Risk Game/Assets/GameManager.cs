@@ -18,7 +18,9 @@ public class GameManager : MonoBehaviour {
 	public TextMeshProUGUI currentTurnPlayer;
 	public TextMeshProUGUI currentState;
 	public bool continueClicked = false;
+	public GameObject startButtonObj;
 	public GameObject continueButtonObj;
+	public GameObject quitButtonObj;
 
 	// Territories.
 	public TerritoryObject TheGift;
@@ -88,6 +90,8 @@ public class GameManager : MonoBehaviour {
 			InitializePlayerData();
 			StartCoroutine(ControlScore());
 			turnPlayer = TurnPlayer.P1;
+			startButtonObj.SetActive(false);
+			quitButtonObj.SetActive(true);
 			StartTurn(turnPlayer);
 		}
 	}
@@ -95,6 +99,11 @@ public class GameManager : MonoBehaviour {
 	public void StartGame() {
 		Debug.Log("Start button clicked.");
 		isGameActive = true;
+	}
+
+	public void QuitGame() {
+		Debug.Log("Quit button clicked.");
+		isGameActive = false;
 	}
 
 	public void ContinueButton() {

@@ -47,6 +47,8 @@ public class TerritoryManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		if (gameManager.isGameActive) {
+			//Debug.Log(gameObject + " highlight int: " + highlightInt);
+			//Debug.Log(gameObject + " color mode: " + colorMode);
 			// From the human perspective, only allow owned territories to be selectable
 			// when it is their turn.
 			if (gameManager.turnPlayer == TurnPlayer.P1) {
@@ -67,6 +69,12 @@ public class TerritoryManager : MonoBehaviour {
 			}
 			else {
 				isSelectable = false;
+			}
+
+			if (highlightInt == highlightIntTracker) {
+				border.enabled = true;
+				armyCountCircleRenderer.color = new Color(armyCountCircleRenderer.color.r,
+					armyCountCircleRenderer.color.g, armyCountCircleRenderer.color.b, 0.8f);
 			}
 
 			if (highlightInt != highlightIntTracker) {

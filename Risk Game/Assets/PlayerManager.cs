@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
@@ -14,6 +15,10 @@ public class PlayerManager : MonoBehaviour {
 	private SimpleAI ai;
 	public static int[] attackingRolls;
 	public static int[] defendingRolls;
+	public TextMeshProUGUI remainingArmies;
+	public TextMeshProUGUI attackingInfo;
+	public TextMeshProUGUI defendingInfo;
+
 
 	// Start is called before the first frame update
 	private void Start() {
@@ -84,8 +89,8 @@ public class PlayerManager : MonoBehaviour {
 		if (isHuman) {
 			switch (turnState) {
 				case TurnState.REINFORCE:
+					gameManager.continueButtonObj.SetActive(false);
 					reinforcements = CalculateReinforcements();
-					Debug.Log(reinforcements);
 					Reinforce();
 					StartCoroutine(WaitToAttack());
 					break;
@@ -127,7 +132,7 @@ public class PlayerManager : MonoBehaviour {
 					StartCoroutine(ai.WaitToAttack());
 					break;
 				case TurnState.MANEUVER:
-					ai.Maneuver();
+					StartCoroutine(ai.WaitToManeuver());
 					break;
 				case TurnState.DONE:
 					switch (gameManager.turnPlayer) {
@@ -154,7 +159,7 @@ public class PlayerManager : MonoBehaviour {
 
 	public void Reinforce() {
 		Debug.Log("Reinforcement Phase beginning.");
-		TerritoryManager.IncrementHighlightCounter();
+		//TerritoryManager.IncrementHighlightCounter();
 		territoryListMine.ForEach(delegate (TerritoryObject territory) {
 			territory.territoryGameObj.GetComponent<TerritoryManager>().HighlightBorder(playerColor);
 		});
@@ -220,8 +225,8 @@ public class PlayerManager : MonoBehaviour {
 				attackingTerrArmies--;
 			}
 		}
-		Debug.Log("Attacking" + attackingTerrArmies);
-		Debug.Log("Defending" + defendingTerrArmies);
+		//Debug.Log("Attacking" + attackingTerrArmies);
+		//Debug.Log("Defending" + defendingTerrArmies);
 		attackingTerrComponent.SetArmyCount(attackingTerrArmies);
 		defendingTerrComponent.SetArmyCount(defendingTerrArmies);
 		if (defendingTerrArmies == 0) {
