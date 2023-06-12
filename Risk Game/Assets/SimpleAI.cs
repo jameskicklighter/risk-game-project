@@ -82,7 +82,7 @@ public class SimpleAI : MonoBehaviour {
 
 		// If we found a good place to attack from, find a target.
 		if (goodToAttack) {
-			Debug.Log("AI is attacking " + origin.territoryGameObj + " from " + target.territoryGameObj);
+			Debug.Log("AI is attacking " + target.territoryGameObj + " from " + origin.territoryGameObj);
 			PlayerManager.CommenceAttack(originScript, targetScript);
 		}
 		else {

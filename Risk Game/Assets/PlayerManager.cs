@@ -123,6 +123,7 @@ public class PlayerManager : MonoBehaviour {
 			}
 		}
 		else {
+			gameManager.continueButtonObj.SetActive(true);
 			switch (turnState) {
 				case TurnState.REINFORCE:
 					reinforcements = CalculateReinforcements();

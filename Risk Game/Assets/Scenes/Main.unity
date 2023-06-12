@@ -1969,6 +1969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404649629}
   - component: {fileID: 404649630}
+  - component: {fileID: 404649631}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Human
@@ -2007,6 +2008,18 @@ MonoBehaviour:
   remainingArmies: {fileID: 607378467}
   attackingInfo: {fileID: 470531556}
   defendingInfo: {fileID: 654683565}
+--- !u!114 &404649631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404649628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded1cf21a6fac13499b31390107500b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &412301080
 GameObject:
   m_ObjectHideFlags: 0
